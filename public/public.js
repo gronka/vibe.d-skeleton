@@ -1,0 +1,1 @@
+alert("an alert");$myvar=2;$myvar=2;$myvar=2;

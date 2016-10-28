@@ -1,0 +1,7 @@
+docs.json
+__dummy.html
+*.o
+*.obj
+*.swp
+.dub/
+newtest

@@ -1,0 +1,15 @@
+{
+	"authors": [
+		"Taylor"
+	],
+	"name": "newtest",
+	"license": "proprietary",
+	"copyright": "Copyright © 2016, Taylor",
+	"description": "A simple vibe.d server application.",
+	"dependencies": {
+		"vibe-d": "~>0.7.26"
+	},
+	"versions": [
+		"VibeDefaultMain"
+	]
+}
