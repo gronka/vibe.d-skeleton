@@ -49,13 +49,21 @@ task_info=("")
 	#printf "${CYAN} IN ${task_info[0]} ${task_info[1]} ${task_info[2]}${NC}\n"
 #}
 
+# try to build the application
+# If it fails, create a dummy file so that watching does not break
+if [[ -f $APPLICATION ]] ; then
+	dub run &
+else
+	touch $APPLICATION
+fi
+
 while true; do
 	printf "\n${GREEN}===== waiting for next task =====${NC}\n\n"
 	task_string=$(block_for_change)
 	IFS=' ' read -r -a task_info <<< "$task_string"
-	info_path=${task_info[0]}
-	info_action=${task_info[1]}
-	info_file=${task_info[2]}
+	#info_path=${task_info[0]}
+	#info_action=${task_info[1]}
+	#info_file=${task_info[2]}
 
 	printf "${CYAN} IN ${task_info[0]} ${task_info[1]} ${task_info[2]}${NC}\n"
 

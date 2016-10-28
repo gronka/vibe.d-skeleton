@@ -2,14 +2,15 @@
 	"authors": [
 		"Taylor"
 	],
-	"name": "newtest",
+	"name": "bolt",
 	"license": "proprietary",
 	"copyright": "Copyright © 2016, Taylor",
 	"description": "A simple vibe.d server application.",
 	"dependencies": {
-		"vibe-d": "~>0.7.26"
+		"vibe-d": "~>0.7.29"
 	},
 	"versions": [
 		"VibeDefaultMain"
-	]
+	],
+	"stringImportPaths": ["views/"]
 }
